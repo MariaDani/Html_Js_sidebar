@@ -1,0 +1,247 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 1024px;
+    background-color: #1F1E37;
+    color: #C3D6EC;
+    font-family: poppins-regular;
+    font-size: 11px;
+    line-height: 16px;
+    border-radius: 16px;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: width 0.5s linear;
+}
+.content._active {
+    width: 82px;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 210px;
+    height: 42px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.header-logo {
+    margin-right: 24px;
+}
+.logo-text {
+    font-family: poppins-bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+}
+.logo-text._active {
+    display: none;
+}
+.logo-text span {
+    font-size: 12px;
+    line-height: 18px;
+    color: #C3D6EC;
+    font-family: poppins-regular;
+}
+
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+.section-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 210px;
+    height: 42px;
+}
+.section-item._active {
+    width: 42px;
+}
+.section-item:hover {
+    color: white;
+    background-color: rgba(98, 95, 202, 0.64);
+    border-radius: 7px;
+}
+.section-item:first-child {
+    padding-top: 0;
+}
+.section-img {
+    margin-left: 10px;
+}
+.section-text {
+    display: block;
+    margin-left: 60px;
+}
+.section-text._active {
+    display: none;
+}
+
+
+/*sprites*/
+
+.home-sprite {
+    width: 22px; height: 21px;
+    background: url('./img/home_sprite.png') -10px -10px;
+    position: absolute;
+}
+.home-sprite:hover {
+    width: 22px; height: 21px;
+    background: url('./img/home_sprite.png') -10px -51px;
+}
+.category-sprite {
+    width: 24px; height: 24px;
+    background: url('./img/category_sprite.png') -10px -10px;
+    position: absolute;
+}
+.category-sprite:hover {
+    width: 24px; height: 24px;
+    background: url('./img/category_sprite.png') -10px -54px;
+}
+.orders-sprite {
+    width: 24px; height: 24px;
+    background: url('./img/orders_sprite.png') -10px -10px;
+    position: absolute;
+}
+.orders-sprite:hover {
+    width: 24px; height: 24px;
+    background: url('./img/orders_sprite.png') -10px -52px;
+}
+.team-sprite {
+    width: 24px; height: 24px;
+    background: url('./img/team_sprite.png') -10px -10px;
+    position: absolute;
+}
+.team-sprite:hover {
+    width: 24px; height: 24px;
+    background: url('./img/team_sprite.png') -10px -54px;
+}
+.downloads-sprite {
+    width: 24px; height: 24px;
+    background: url('./img/downloads_sprite.png') -10px -10px;
+    position: absolute;
+}
+.downloads-sprite:hover {
+    width: 24px; height: 24px;
+    background: url('./img/downloads_sprite.png') -10px -54px;
+}
+.functions-sprite {
+    width: 24px; height: 24px;
+    background: url('./img/functions_sprite.png') -10px -10px;
+    position: absolute;
+}
+.functions-sprite:hover {
+    width: 24px; height: 24px;
+    background: url('./img/functions_sprite.png') -10px -54px;
+}
+.management-sprite {
+    width: 24px; height: 24px;
+    background: url('./img/management_sprite.png') -10px -10px;
+    position: absolute;
+}
+.management-sprite:hover {
+    width: 24px; height: 24px;
+    background: url('./img/management_sprite.png') -10px -54px;
+}
+.settings-sprite {
+    width: 24px; height: 24px;
+    background: url('./img/settings_sprite.png') -10px -10px;
+    position: absolute;
+}
+.settings-sprite:hover {
+    width: 24px; height: 24px;
+    background: url('./img/settings_sprite.png') -10px -54px;
+}
+.reporting-sprite {
+    width: 24px; height: 24px;
+    background: url('./img/reporting_sprite.png') -10px -10px;
+    position: absolute;
+}
+.reporting-sprite:hover {
+    width: 24px; height: 24px;
+    background: url('./img/reporting_sprite.png') -10px -54px;
+}
+/*--------------------*/
+
+
+.break-line {
+    width: 210px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: width 0.5s linear;
+}
+.break-line._active {
+    width: 42px;
+}
+.switch-button {
+    width: 80px;
+    height: 80px;
+    position: sticky;
+    margin-top: -70px;
+    margin-left: 205px;
+    transition: margin 0.5s linear;
+}
+.switch-button._active {
+    margin-left: 37px;
+    transform: rotate(180deg);
+}
+
+
+.futter {
+    display: flex;
+    flex-direction: row;
+    width: 210px;
+    height: 40px;
+    margin-top: 400px;
+    margin-left: 34px;
+}
+.futter._active {
+    margin-left: 21px;
+}
+.user-img {
+    margin-right: 16px;
+}
+
+
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: poppins-regular;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
